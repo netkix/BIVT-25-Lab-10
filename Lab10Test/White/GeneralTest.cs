@@ -29,7 +29,7 @@
 //             Assert.IsTrue(fileManagerInterface.IsInterface, "IFileManager must be interface");
 //
 //             Assert.IsNotNull(fileManagerInterface.GetProperty("FolderPath"));
-//             Assert.IsNotNull(fileManagerInterface.GetProperty("FilePath"));
+//             Assert.IsNotNull(fileManagerInterface.GetProperty("FileName"));
 //             Assert.IsNotNull(fileManagerInterface.GetProperty("FileExtension"));
 //             Assert.IsNotNull(fileManagerInterface.GetProperty("FullPath"));
 //
@@ -82,7 +82,7 @@
 //             Assert.IsTrue(folderProp.CanRead, "FolderPath must have getter");
 //             Assert.IsTrue(folderProp.SetMethod?.IsPrivate, "FolderPath setter must be private");
 //
-//             var fileProp = managerType.GetProperty("FilePath");
+//             var fileProp = managerType.GetProperty("FileName");
 //             Assert.IsTrue(fileProp.CanRead);
 //             Assert.IsTrue(!fileProp.CanWrite || fileProp.SetMethod.IsPrivate);
 //
@@ -182,7 +182,7 @@
 //                 "FolderPath not set");
 //
 //             Assert.AreEqual("task", manager.FileName,
-//                 "FilePath not set");
+//                 "FileName not set");
 //
 //             Assert.IsTrue(manager.FullPath.Contains("task"),
 //                 "FullPath incorrect");

@@ -28,7 +28,7 @@
 //             Assert.IsTrue(fileManagerInterface.IsInterface);
 //
 //             Assert.IsNotNull(fileManagerInterface.GetProperty("FolderPath"));
-//             Assert.IsNotNull(fileManagerInterface.GetProperty("FilePath"));
+//             Assert.IsNotNull(fileManagerInterface.GetProperty("FileName"));
 //             Assert.IsNotNull(fileManagerInterface.GetProperty("FileExtension"));
 //             Assert.IsNotNull(fileManagerInterface.GetProperty("FullPath"));
 //
